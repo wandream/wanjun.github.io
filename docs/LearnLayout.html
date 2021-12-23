@@ -2,7 +2,7 @@
  * @Author: Mia
  * @Date: 2021-12-23 11:08:36
  * @LastEditors: Mia
- * @LastEditTime: 2021-12-23 11:17:39
+ * @LastEditTime: 2021-12-23 11:22:42
  * @Description: 
 -->
 <!DOCTYPE html>
@@ -56,7 +56,7 @@
         background-color: pink;
         height: 50px;
       }
-      .clear-fix::after {
+      .sheng-content.clear-fix::after {
         content: "";
         display: block;
         clear: both;
@@ -149,7 +149,6 @@
       <div class="sheng-container">
         <div class="sheng-header"></div>
         <div class="sheng-content clear-fix">
-          {/* 将center放在前面，在加载的过程中可以优先加载 */}
           <div class="sheng-center"></div>
           <div class="sheng-left"></div>
           <div class="sheng-right"></div>
