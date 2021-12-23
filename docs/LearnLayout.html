@@ -1,0 +1,191 @@
+<!--
+ * @Author: Mia
+ * @Date: 2021-12-23 11:08:36
+ * @LastEditors: Mia
+ * @LastEditTime: 2021-12-23 11:13:50
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container-layout {
+        background-color: #ffffff;
+      }
+      .sheng-container {
+        width: 500px;
+      }
+      .sheng-header {
+        background-color: red;
+        height: 50px;
+      }
+      .sheng-content {
+        width: 500px;
+        /* 左右设置padding用来放left和right */
+        padding: 0 50px;
+      }
+      .sheng-left {
+        height: 200px;
+        width: 50px;
+        background-color: aquamarine;
+        float: left;
+        margin-left: -100%;
+        position: relative;
+        left: -50px;
+      }
+      .sheng-center {
+        float: left;
+        height: 200px;
+        background-color: purple;
+        width: 100%; /* 这会把left和right挤到下一行 */
+      }
+      .sheng-right {
+        float: left;
+        width: 50px;
+        height: 200px;
+        margin-left: -50px;
+        background-color: bisque;
+        position: relative;
+        right: -50px;
+      }
+      .sheng-footer {
+        background-color: pink;
+        height: 50px;
+      }
+      .clear-fix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      /* flex 布局 */
+      .flex-container {
+        width: 500px;
+      }
+      .flex-header {
+        height: 50px;
+        background-color: blue;
+      }
+      .flex-content {
+        display: flex;
+      }
+      .flex-left {
+        background-color: red;
+        width: 50px;
+        height: 200px;
+      }
+      .flex-right {
+        background-color: green;
+        width: 50px;
+        height: 200px;
+      }
+      .flex-center {
+        background-color: purple;
+        flex: 1;
+      }
+      .flex-footer {
+        height: 50px;
+        background-color: pink;
+      }
+
+      /* 双飞翼布局 */
+      .shuang-container {
+        width: 500px;
+      }
+      .shuang-header {
+        height: 50px;
+        background-color: blue;
+      }
+      .shuang-footer {
+        height: 50px;
+        background-color: pink;
+      }
+      .shuang-left,
+      .shuang-right,
+      .shuang-center {
+        float: left;
+        height: 200px;
+      }
+
+      .shuang-center {
+        /* 外层容器铺满 */
+        width: 100%;
+        background-color: purple;
+        color: #ffffff;
+      }
+
+      .shuang-center-content {
+        /* 内层内容 */
+        color: #ffffff;
+        margin: 0 50px;
+      }
+
+      .shuang-left {
+        width: 50px;
+        background-color: red;
+        margin-left: -100%;
+      }
+
+      .shuang-right {
+        width: 50px;
+        background-color: grey;
+        margin-left: -50px; /* 作用和圣杯一样 */
+      }
+      .shuang-footer {
+        height: 50px;
+        background-color: pink;
+        /* 清除上面盒子的浮动 */
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div className="container-layout">
+      <h1>圣杯布局</h1>
+      <div className="sheng-container">
+        <div className="sheng-header"></div>
+        <div className="sheng-content clear-fix">
+          {/* 将center放在前面，在加载的过程中可以优先加载 */}
+          <div className="sheng-center"></div>
+          <div className="sheng-left"></div>
+          <div className="sheng-right"></div>
+        </div>
+        <div className="sheng-footer"></div>
+      </div>
+      <h1>flex布局</h1>
+      <div className="flex-container">
+        <div className="flex-header"></div>
+        <div className="flex-content">
+          <div className="flex-left"></div>
+          <div className="flex-center"></div>
+          <div className="flex-right"></div>
+        </div>
+        <div className="flex-footer"></div>
+      </div>
+      <h1>双飞翼布局</h1>
+      <div className="shuang-container">
+        <div className="shuang-header"></div>
+        <div className="shuang-content">
+          <div className="shuang-center">
+            <div className="shuang-center-content">
+              123123123123123123123123123123123123123123123123
+            </div>
+          </div>
+          <div className="shuang-left"></div>
+          <div className="shuang-right"></div>
+        </div>
+        <div className="shuang-footer"></div>
+      </div>
+      <div>
+        <strong>圣杯布局</strong>
+        <p>圣杯布局就是三栏布局，其中左右两栏固定宽度，中间部分自适应</p>
+        <strong>双飞翼布局</strong>
+        <p>双飞翼布局与圣杯布局达成的效果类似，只是实现方法有所差别。区别在于双飞翼布局给中间套了一个容器，通过设置该容器内部的中间块margin属性，从而使中间块两侧的内容不会被左右遮挡</p>
+      </div>
+    </div>
+  </body>
+</html>
