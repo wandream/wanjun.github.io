@@ -2,7 +2,7 @@
  * @Author: Mia
  * @Date: 2021-12-23 09:18:31
  * @LastEditors: Mia
- * @LastEditTime: 2021-12-28 14:38:21
+ * @LastEditTime: 2021-12-29 09:52:13
  * @Description: 
 -->
 ## Welcome to GitHub Pages
@@ -16,3 +16,6 @@
 
 ## React 学习总结
 [react - part](https://wandream.github.io/wanjun.github.io/LearnReact/part1)
+
+## TS 学习总结
+[TS - part](https://wandream.github.io/wanjun.github.io/LearnTS/part1)
