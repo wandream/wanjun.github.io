@@ -2,12 +2,14 @@
  * @Author: Mia
  * @Date: 2021-12-28 10:18:54
  * @LastEditors: Mia
- * @LastEditTime: 2022-01-04 10:22:38
+ * @LastEditTime: 2022-01-04 10:37:56
  * @Description: Vue3 中的 ts 写法
 -->
+
 ## Vue3 中 ref 和 reactive
 
 ### ref
+
 ref 是最常用的一个响应式 API
 
 ```javascript
@@ -36,5 +38,20 @@ const memberList = ref<Member[]> {
 const names = ref<string[]>(['tom','jerry'])
 ```
 
-DOM元素与子组件
-ref处理可以定义数据之外，还可以用来挂载到节点或者挂载到子组件上
+DOM 元素与子组件
+ref 处理可以定义数据之外，还可以用来挂载到节点或者挂载到子组件上
+
+```javascript
+<template>
+  <!-- 挂载 dom 元素 -->
+  <p ref="msg"></p>
+  <!-- 挂载子组件 -->
+  <Child ref="child" />
+</template>
+```
+
+关于 DOM 和子组件的 TS 类型声明：
+|节点类型|声明类型|
+|--|---|
+|DOM 元素|使用 HTML 元素接口|
+|子组件|使用 typeof 获取子组件的类型|
