@@ -2,11 +2,11 @@
  * @Author: Mia
  * @Date: 2021-12-24 13:54:54
  * @LastEditors: Mia
- * @LastEditTime: 2021-12-28 11:12:08
+ * @LastEditTime: 2022-01-04 17:16:04
  * @Description:
 -->
-
-# Vue3 组件间的通信
+[返回](https://wandream.github.io/wanjun.github.io/)
+## Vue3 组件间的通信
 
 [父子组件通信](#父子组件通信)<br/>
 [祖孙组件通信](#祖孙组件通信)<br/>
@@ -25,8 +25,8 @@
 
 ## props/emit
 
-1. Father.vue 通过 props 向 Child.vue 传值
-2. Child.vue 通过 emit 向 Father.vue 触发父组件的事件执行
+1. Father.vue 通过 `props` 向 Child.vue 传值
+2. Child.vue 通过 `emit` 向 Father.vue 触发父组件的事件执行
 
 # 祖孙组件通信
 
@@ -38,8 +38,8 @@
 
 ## provide
 
-- 在 3.x 中，provide 需要导入并在 setup 里启用
-- 每次要 provide 一个数据的时候，就要单独调用一次
+- 在 3.x 中，`provide` 需要导入并在 `setup` 里启用
+- 每次要 `provide` 一个数据的时候，就要单独调用一次
 
 ```javascript
 import { defineComponent, provide } from 'vue'
@@ -53,12 +53,12 @@ export default defineComponent({
 })
 ```
 
-<strong>需要注意的是，provide 不是响应式的，如果需要使其具备响应性，需要传入响应式数据</strong>
+<strong>需要注意的是，`provide` 不是响应式的，如果需要使其具备响应性，需要传入响应式数据</strong>
 
 ## inject
 
-- 在 3.x，inject 和 provide 一样，也是需要先导入然后在 setup 里启用
-- 每次要 inject 一个数据的时候，就要单独调用一次
+- 在 3.x，`inject` 和 `provide` 一样，也是需要先导入然后在 `setup` 里启用
+- 每次要 `inject` 一个数据的时候，就要单独调用一次
 
 ```javascript
 // 记得导入inject
