@@ -2,7 +2,7 @@
  * @Author: Mia
  * @Date: 2022-01-05 09:23:53
  * @LastEditors: Mia
- * @LastEditTime: 2022-01-05 10:11:45
+ * @LastEditTime: 2022-01-05 10:31:44
  * @Description:
 -->
 
@@ -48,3 +48,36 @@ function create() {
 ## js 中的类
 
 在面向对象编程中，类（clas）是对象（object）的模板，定义了同一组对象共有的属性和方法。js 本身不支持类，但可以用一些变通的方法来模拟。
+- 构造函数
+```JavaScript
+function Cat() {
+  this.name = 'tom',
+}
+const cat = new Cat()
+```
+- Object.create()
+这种方法有一定的兼容性问题，不能实现私有属性和私有方法，实例对象之间也不能共享数据
+```javascript
+const Cat = {
+  name: "tom",
+  makeSound: funtion() {
+    console.log('喵喵喵')
+  }
+}
+const cat = object.create(Cat)
+```
+- 极简主义
+```JavaScript
+const Person = {
+  createNew: function() {
+    var Person = {};
+    Person.type = '人';
+    Person.run = function() {
+      console.log('run')
+    }
+    return Person
+  }
+}
+var person =  Person.createNew()
+```
+
