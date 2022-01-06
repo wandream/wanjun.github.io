@@ -1,3 +1,10 @@
+<!--
+ * @Author: Mia
+ * @Date: 2021-12-23 09:18:31
+ * @LastEditors: Mia
+ * @LastEditTime: 2022-01-06 16:09:26
+ * @Description: 
+-->
 ## Welcome to GitHub Pages
 
 ## Vue3 学习总结
@@ -13,6 +20,8 @@
 ## TS 学习总结
 
 - [TS - part](https://wandream.github.io/wanjun.github.io/LearnTS/part1)
+- [TS - 高级类型](https://wandream.github.io/wanjun.github.io/LearnTS/part2)
+- [TS - 内置类型](https://wandream.github.io/wanjun.github.io/LearnTS/part3)
 
 ## JS 学习
 
