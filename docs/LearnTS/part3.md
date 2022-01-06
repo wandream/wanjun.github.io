@@ -1,5 +1,16 @@
 ## TS 内置类型
 
+ - [Partial](#Partial)
+ - [Required](#Required)
+ - [Readonly](#Readonly)
+ - [Pick](#Pick)
+ - [Exclude](#Exclude)
+ - [Extract](#Extract)
+ - [Omit](#Omit)
+ - [NonNullable](#NonNullable)
+ - [Uppercase](#Uppercase)
+ - [Lowercase](#Lowercase)
+
 ### Partial
 
 让传入类型中的所有属性变成都是可选的
@@ -180,3 +191,29 @@ const student2: omit<Student, PersonAttr> = {
   age: 123123,
 }
 ```
+
+### NonNullable
+不能为空
+```typescript
+type nonNullable<T> = T extends null | undefined ? never : T;
+
+export interface Student {
+  name: string;
+  age: number;
+}
+
+// Type 'null' is not assignable to type 'Student'.
+const student1: nonNullable<Student | undefined | null> = null
+```
+
+### Uppercase
+大写
+```typescript
+type uppercase<S extends string> = intrinsic
+
+export type StudentSexType = 'male' | 'female'
+
+// Type '"male"' is not assignable to type '"MALE" | "FEMALE"'. Did you mean '"MALE"'?(2820)
+const studentSex: Uppercase<StudentSexType> = 'male'
+```
+
