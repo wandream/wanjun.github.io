@@ -2,7 +2,7 @@
  * @Author: Mia
  * @Date: 2021-12-23 09:18:31
  * @LastEditors: Mia
- * @LastEditTime: 2022-01-06 16:09:26
+ * @LastEditTime: 2022-01-07 09:12:17
  * @Description: 
 -->
 ## Welcome to GitHub Pages
@@ -25,4 +25,5 @@
 
 ## JS 学习
 
-- [构造函数，原型链 - part](https://wandream.github.io/wanjun.github.io/LearnJS/part1)
+- [JS - 构造函数，原型链](https://wandream.github.io/wanjun.github.io/LearnJS/part1)
+- [JS - Promise A+](https://wandream.github.io/wanjun.github.io/LearnJS/part2)
