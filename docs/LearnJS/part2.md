@@ -2,7 +2,7 @@
  * @Author: Mia
  * @Date: 2022-01-06 17:33:29
  * @LastEditors: Mia
- * @LastEditTime: 2022-01-07 09:11:23
+ * @LastEditTime: 2022-01-10 09:48:26
  * @Description:
 -->
 
@@ -95,7 +95,7 @@ class MyPromise {
   // 构造方法接收一个回调
   constructor(executor) {
     this._status = PENDING; // Promise状态
-    this._value = undefined; // 储存then回调return的值
+    this._value = undefined; // 储存then回调return的值，为了实现值穿透
     this._resolveQueue = []; // 成功队列, resolve时触发
     this._rejectQueue = []; // 失败队列, reject时触发
 
@@ -116,7 +116,7 @@ class MyPromise {
       };
       setTimeout(run);
     };
-    // 实现同resolve
+    // 实现同reject
     let _reject = (val) => {
       const run = () => {
         if (this._status !== PENDING) return; // 对应规范中的"状态只能由pending到fulfilled或rejected"
@@ -216,4 +216,49 @@ p1.then((res) => {
 // 2
 // 3
 // Error: reject测试
+```
+
+
+### Promise.prototype.catch
+> `catch() 方法` 返回一个 Promise，并且处理拒绝的情况。它的行为同调用 Promise.prototype.then(undefind, onRejected)是相同的
+```javascript
+catch(rejectFn) {
+  return this.then(undefined, rejectFn)
+}
+```
+
+### Promise.prototype.finally
+> `finally() 方法` 返回一个 Promise。在 Promise 结束的时候，无论结果是 fulfilled 或者是 rejected，都会执行指定的回调函数。这为在 Promise 是否成功完成后都需要执行提供了一种方式
+```javascript
+p.finally(onFinally);
+
+p.finally(function() {
+  // 返回状态为(resolved 或 rejected)
+})
+```
+
+### Promise.all
+> `Promise.all(iterable)`方法返回一个 Promise 实例，此实例在 iterable 参数内所有的 promise 都 resolved 或参数中不包含 promise 时回调完成；如果参数中 promise 有一个失败，此实例回调失败，失败的原因是第一个失败 promise 的结果
+
+```javascript
+// 静态的 all 方法
+static all(promiseArr) {
+  let index = 0
+  let result = []
+  return new MyPromise((resolve, reject) => {
+    promiseArr.forEach((item, ind) => {
+      MyPromise.resolve(item).then(val => {
+        index++
+        result[i] = val
+        // 所有 then 执行之后，resolve结果
+        if(index === promiseArr.length) {
+          resolve(result)
+        }
+      }, err => {
+        // 有一个 Promise 被 reject 时，MyPromise 的状态变为 reject
+        reject(err)
+      })
+    })
+  })
+}
 ```
