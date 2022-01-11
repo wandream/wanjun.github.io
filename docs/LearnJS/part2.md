@@ -2,7 +2,7 @@
  * @Author: Mia
  * @Date: 2022-01-06 17:33:29
  * @LastEditors: Mia
- * @LastEditTime: 2022-01-10 09:48:26
+ * @LastEditTime: 2022-01-10 14:28:04
  * @Description:
 -->
 
@@ -262,3 +262,6 @@ static all(promiseArr) {
   })
 }
 ```
+
+### Promise.allSettled
+> `Promise.allSettled()`返回一个在所有给定的 promise 都已经 fulfilled 

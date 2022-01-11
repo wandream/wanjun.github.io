@@ -30,6 +30,17 @@ const student1: Student = {};
 const student2: partial<Student> = {};
 ```
 
+### DeepPartial
+
+```typescript
+type DeepPartial<T> = T extends Function
+  ? T
+  : T extends object
+  ? { [P in keyof T]?: DeepPartial<T[P]> }
+  : T
+type PartialedWindow = DeepPartial<Window>
+```
+
 ### Required
 
 让传入类型中的所有属性都变成是必填的
