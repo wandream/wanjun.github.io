@@ -2,7 +2,7 @@
  * @Author: Mia
  * @Date: 2022-01-06 17:33:29
  * @LastEditors: Mia
- * @LastEditTime: 2022-01-10 14:28:04
+ * @LastEditTime: 2022-01-11 17:24:56
  * @Description:
 -->
 
@@ -231,7 +231,6 @@ catch(rejectFn) {
 > `finally() 方法` 返回一个 Promise。在 Promise 结束的时候，无论结果是 fulfilled 或者是 rejected，都会执行指定的回调函数。这为在 Promise 是否成功完成后都需要执行提供了一种方式
 ```javascript
 p.finally(onFinally);
-
 p.finally(function() {
   // 返回状态为(resolved 或 rejected)
 })
