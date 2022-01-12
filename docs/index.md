@@ -2,7 +2,7 @@
  * @Author: Mia
  * @Date: 2021-12-23 09:18:31
  * @LastEditors: Mia
- * @LastEditTime: 2022-01-12 10:29:34
+ * @LastEditTime: 2022-01-12 16:44:16
  * @Description: 
 -->
 ## Welcome to GitHub Pages
@@ -22,7 +22,8 @@
 - [TS - part](https://wandream.github.io/wanjun.github.io/LearnTS/part1)
 - [TS - 高级类型](https://wandream.github.io/wanjun.github.io/LearnTS/part2)
 - [TS - 内置类型](https://wandream.github.io/wanjun.github.io/LearnTS/part3)
-- [TS - React的一些实践](https://wandream.github.io/wanjun.github.io/LearnTS/part3)
+- [TS - React的一些实践](https://wandream.github.io/wanjun.github.io/LearnTS/part4)
+- [TS - 定义React组件](https://wandream.github.io/wanjun.github.io/LearnTS/part5)
 
 ## JS 学习
 
