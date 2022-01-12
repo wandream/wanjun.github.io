@@ -227,4 +227,3 @@ export type StudentSexType = 'male' | 'female'
 // Type '"male"' is not assignable to type '"MALE" | "FEMALE"'. Did you mean '"MALE"'?(2820)
 const studentSex: Uppercase<StudentSexType> = 'male'
 ```
-
