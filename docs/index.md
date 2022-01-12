@@ -2,7 +2,7 @@
  * @Author: Mia
  * @Date: 2021-12-23 09:18:31
  * @LastEditors: Mia
- * @LastEditTime: 2022-01-07 09:12:17
+ * @LastEditTime: 2022-01-12 10:29:34
  * @Description: 
 -->
 ## Welcome to GitHub Pages
@@ -22,8 +22,11 @@
 - [TS - part](https://wandream.github.io/wanjun.github.io/LearnTS/part1)
 - [TS - 高级类型](https://wandream.github.io/wanjun.github.io/LearnTS/part2)
 - [TS - 内置类型](https://wandream.github.io/wanjun.github.io/LearnTS/part3)
+- [TS - React的一些实践](https://wandream.github.io/wanjun.github.io/LearnTS/part3)
 
 ## JS 学习
 
 - [JS - 构造函数，原型链](https://wandream.github.io/wanjun.github.io/LearnJS/part1)
 - [JS - Promise A+](https://wandream.github.io/wanjun.github.io/LearnJS/part2)
+- [JS - 数据类型判断](https://wandream.github.io/wanjun.github.io/LearnJS/part3)
+- [JS - 闭包](https://wandream.github.io/wanjun.github.io/LearnJS/part4)

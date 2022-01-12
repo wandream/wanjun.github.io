@@ -2,7 +2,7 @@
  * @Author: Mia
  * @Date: 2022-01-06 17:07:30
  * @LastEditors: Mia
- * @LastEditTime: 2022-01-11 16:54:48
+ * @LastEditTime: 2022-01-12 10:29:56
  * @Description: 
 -->
 ### TS React的一些实践
@@ -139,8 +139,18 @@ example('hello world')
  ```
 
 #### 索引、映射、条件、断言类型
+
+##### 索引签名
+```typescript
+let foo:any = {}
+foo['hello'] = 'world'
+console.log(foo['hello'])// world
+```
+
 ```typescript
 // 用 extends 关键字判断两个类型的子类型关系
 type isSubTyping<Child, Par> = Child extends Par ? true : false
 type isAssertable<T,S> = T extends S ? true : S extends T ? true : false
+type isNumAssertable = isAssertable<1, number> //true
+
 ```
