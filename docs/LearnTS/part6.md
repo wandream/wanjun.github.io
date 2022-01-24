@@ -11,6 +11,7 @@
 ```typescript
 export interface RouteType {
   pathname: string;
+  // LazyExoticComponnet 懒加载异步组件
   component: LazyExoticComponnet<any>;
   exact?: boolean;
   title?: string;

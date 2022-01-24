@@ -2,7 +2,7 @@
  * @Author: Mia
  * @Date: 2022-01-12 16:13:23
  * @LastEditors: Mia
- * @LastEditTime: 2022-01-12 16:42:07
+ * @LastEditTime: 2022-01-17 13:51:12
  * @Description: TS 定义React 组件
 -->
 
@@ -78,3 +78,5 @@ type IProps = { name: string; age: number };
 <MyComponent<IProps> name="React" age={18} />; // Success
 <MyComponent<IProps> name="TypeScript" age="hello" />; // Error
 ```
+
+#### TS 在 React 中定义组件 props 的写法
