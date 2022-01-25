@@ -2,7 +2,7 @@
  * @Author: Mia
  * @Date: 2021-12-23 09:18:31
  * @LastEditors: Mia
- * @LastEditTime: 2022-01-12 16:44:16
+ * @LastEditTime: 2022-01-25 09:11:09
  * @Description: 
 -->
 ## Welcome to GitHub Pages
@@ -31,3 +31,5 @@
 - [JS - Promise A+](https://wandream.github.io/wanjun.github.io/LearnJS/part2)
 - [JS - 数据类型判断](https://wandream.github.io/wanjun.github.io/LearnJS/part3)
 - [JS - 闭包](https://wandream.github.io/wanjun.github.io/LearnJS/part4)
+- [JS - 前端上传大文件处理](https://wandream.github.io/wanjun.github.io/LearnJS/part5)
+- [JS - call、apply、bind](https://wandream.github.io/wanjun.github.io/LearnJS/part6)
