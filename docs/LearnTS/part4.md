@@ -2,7 +2,7 @@
  * @Author: Mia
  * @Date: 2022-01-06 17:07:30
  * @LastEditors: Mia
- * @LastEditTime: 2022-01-12 10:29:56
+ * @LastEditTime: 2022-02-25 15:51:03
  * @Description: 
 -->
 ### TS React的一些实践
@@ -77,12 +77,10 @@ class Foo {
   foo = 123,
   common = '123123',
 }
-
 class Bar {
   bar = 123,
   common = '123'
 }
-
 function doStuff(arg: Foo | Bar) {
   if(arg instanceof Foo) {
     console.log(arg.foo) // ok
@@ -102,11 +100,9 @@ doStuff(new Bar());
 interface A {
   x: number
 }
-
 interface B {
   y: string
 }
-
 function doStuff(q: A | B) {
   if('x' in q) {
     // q:A
