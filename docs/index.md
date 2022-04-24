@@ -2,7 +2,7 @@
  * @Author: Mia
  * @Date: 2021-12-23 09:18:31
  * @LastEditors: Mia
- * @LastEditTime: 2022-01-25 09:11:09
+ * @LastEditTime: 2022-03-16 16:17:42
  * @Description: 
 -->
 ## Welcome to GitHub Pages
@@ -12,6 +12,8 @@
 - [vue3 - 组件间通信](https://wandream.github.io/wanjun.github.io/LearnVue3/part1)<br />
 - [vue3 - ref 和 reactive](https://wandream.github.io/wanjun.github.io/LearnVue3/part2)<br />
 - [vue3 - 数据监听](https://wandream.github.io/wanjun.github.io/LearnVue3/part3)
+- [vue3 - 官方文档学习](https://wandream.github.io/wanjun.github.io/LearnVue3/part4)
+- [vue3 - 组合式API基础](https://wandream.github.io/wanjun.github.io/LearnVue3/part6)
 
 ## React 学习总结
 
@@ -33,3 +35,4 @@
 - [JS - 闭包](https://wandream.github.io/wanjun.github.io/LearnJS/part4)
 - [JS - 前端上传大文件处理](https://wandream.github.io/wanjun.github.io/LearnJS/part5)
 - [JS - call、apply、bind](https://wandream.github.io/wanjun.github.io/LearnJS/part6)
+- [JS - 事件循环](https://wandream.github.io/wanjun.github.io/LearnJS/part7)
